@@ -1,0 +1,173 @@
+.experiencia {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  gap: 60px;
+  align-items: center;
+}
+
+.experiencia .subtitulo {
+  color: #ccc;
+}
+
+.experiencia .texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #525252;
+}
+
+.experiencia .texto strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 1px 1px #c0c0c0;
+  max-width: 60ch;
+}
+
+.empresa .detalhe1 {
+  width: 40px;
+  height: 40px;
+  background-color: #6b5dd8;
+  border-radius: 4px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.empresa .detalhe2 {
+  width: 40px;
+  height: 40px;
+  background-color: #7f71e9;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+
+.empresa .empresa-ano {
+  position: relative;
+  left: -120px;
+  top: 0px;
+  color: #525252;
+  font-size: 0.875rem;
+  text-align: right;
+  width: 80px;
+}
+
+.empresa .empresa-titulo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  grid-row: 1;
+  align-self: baseline;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4;
+  grid-column: 1;
+}
+
+.empresa .empresa-habilidades {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: start;
+  position: relative;
+}
+
+.empresa .empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  display: flex;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px #e7e7e7;
+}
+
+@media (max-width: 1000px) {
+  .experiencia {
+    gap: 20px;
+  }
+  .subtitulo {
+    font-size: 6rem;
+    max-width: 4ch;
+  }
+
+  .experiencia .texto {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 4rem;
+  }
+
+  .experiencia .texto {
+    font-size: 0.875rem;
+  }
+
+  .empresa {
+    max-width: 30ch;
+  }
+
+  .empresa {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .empresa-titulo {
+    order: 1;
+  }
+
+  .empresa .empresa-ano {
+    top: -10px;
+    left: -50px;
+  }
+
+  .empresa-texto,
+  strong {
+    order: 2;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .empresa-habilidades {
+    order: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .experiencia {
+    gap: 5px;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+    max-width: 5ch;
+  }
+
+  .detalhe1 {
+    display: none;
+  }
+}
