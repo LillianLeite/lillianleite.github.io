@@ -60,9 +60,25 @@
   margin-top: -20px;
 }
 
+.texto {
+  font-size: 1.5rem;
+}
+
+.texto strong {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1000px) {
   .introducao h1 {
     font-size: 3rem;
+  }
+
+  .texto {
+    font-size: 1.125rem;
+  }
+
+  .texto strong {
+    font-size: 1.125rem;
   }
 
   .introducao h1::after {
@@ -77,6 +93,10 @@
 
   .introducao img {
     max-width: 80%;
+  }
+
+  .introducao p strong {
+    font-size: 0.875rem;
   }
 
   .introducao p::after {
